@@ -1,6 +1,133 @@
 
 /* FULL BOOTSTRAP SUPPORT ~147K */
 @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../bower_components/chartist/dist/scss/chartist.scss";
+
+
+/*VARIABLES*/
+
+$black: #414042; 
+$orange: #f9a11b;
+$green: #2d9598; 
+
+
+
+/*TESTING*/
+
+
+
+
+/*.scrollSection{ 
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: relative;
+	background: url("../img/titleGirl.jpg") no-repeat center;
+}*/
+
+h3{
+	font-family:'Superclarendon W01 Bold1415376';
+}
+
+
+/*MENU*/
+
+
+
+#navColumn{
+	background-color: $orange;
+	width: 200px;
+	/*display: block;*/
+	position: fixed;
+	height: 100%;
+}
+#menuContents{
+	margin: 100% auto 0 auto;
+}
+
+#menuLogo{
+	width: 100px;
+	margin: 0 auto 20px auto;
+}
+
+#fullReport{
+	width: 100px;
+	margin: 20px auto 0 auto;
+}
+
+
+
+.navList {
+
+	font-family: "Gotham A", "Gotham B";
+	font-style: normal;
+	font-weight: 700;
+
+	padding: 0;
+	text-align: center;
+
+	li{
+		list-style-type: none;
+	}
+	a{
+		color: white;
+
+
+	}
+	a:hover{
+		text-decoration: none;
+		color: $black;
+	}
+
+	.active{
+			color: $black;
+		}
+}
+
+
+/*SLIDES*/
+.container{
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	padding-right: 0;
+}
+
+.scrollSection{
+	height: 1000px;
+
+}
+
+.row{
+	margin: 0;
+}
+.offset200{
+	padding-left: 200px;
+}
+
+.sec1twothird{
+	background-color: $orange;
+	padding: 300px 0 500px 0 ;
+}
+.sec1onethird{
+	background-color: $green;
+}
+
+svg{
+	margin-top: 200px;
+}
+
+#sec5{
+	padding-bottom: 5000px;
+}
+
+#vBox1{
+	position: relative !important;
+	left: 300px !important;
+	right: 50px !important; 
+}
+
 
 
 
