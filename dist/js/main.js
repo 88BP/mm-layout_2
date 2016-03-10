@@ -40,7 +40,7 @@ function pathPrepare ($el) {
 
 	var $word = $("path#word");
 	var $dot = $("path#dot");
-	var $verbatim = $("path#verbatim")
+	var $verbatim = $("path#verbatim");
 
 	// prepare SVG
 	pathPrepare($word);
@@ -61,7 +61,7 @@ function pathPrepare ($el) {
 	var scene = new ScrollMagic.Scene({triggerElement: "#sec4", duration: 300, tweenChanges: true})
 					.setTween(tween)
 					.addIndicators() // add indicators (requires plugin)
-					.addTo(controller);
+					.addTo(controller)
 
 	var quoteBox = new ScrollMagic.Scene({triggerElement: "#sec5", duration: 300, tweenChanges: true})
 					.setTween(quote)

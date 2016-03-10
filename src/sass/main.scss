@@ -1,6 +1,6 @@
 
 /* FULL BOOTSTRAP SUPPORT ~147K */
-@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+/*@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";*/
 @import "../bower_components/chartist/dist/scss/chartist.scss";
 
 
@@ -28,6 +28,7 @@ $green: #2d9598;
 
 h3{
 	font-family:'Superclarendon W01 Bold1415376';
+	color: $black;
 }
 
 
@@ -123,10 +124,11 @@ svg{
 }
 
 #vBox1{
-	position: relative !important;
-	left: 300px !important;
-	right: 50px !important; 
+width: 70%;
+right: 0;
 }
+
+
 
 
 
