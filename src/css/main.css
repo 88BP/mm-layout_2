@@ -630,13 +630,21 @@ video#homeVid {
 #titleSvg {
   /*position: relative;*/
   width: 70%;
-  margin: 5% auto auto auto; }
+  margin: 15% auto auto auto; }
 
 #exactlySvg {
-  position: fixed;
-  width: 69%;
-  top: 33%;
-  left: 17%; }
+  /*position: fixed;*/
+  width: 70%;
+  margin: 0 auto;
+  margin-top: -28%;
+  padding-left: 2%;
+  /*top: 33%;
+	left: 17%;*/ }
+
+#logoLockup {
+  width: 20%;
+  margin: 0 auto;
+  margin-top: -37%; }
 
 /*.scrollSection{ 
 	height: 100%;

@@ -1,10 +1,21 @@
 $(function () {
 
+// VERSION 1
+
+// TweenMax.set(".st1", {scaleY: 0})
+// TweenMax.set("#logoLockup", {scaleY: 0})
+
+
+// VERSION 2
+
+TweenMax.set(".st1", {opacity: 0})
+TweenMax.set("#logoLockup", {opacity: 0})
+
 console.log ("hey girl heyyyyyyyy it's your javascript file here to make shit interesting");
 
 var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onLeave"}});
 
-TweenMax.set(".st1", {scaleY: 0})
+
 
 
 
@@ -104,7 +115,7 @@ function pathPrepare ($el) {
 		new TimelineMax() 
 		.add(TweenMax.to($title5, 2, {strokeDashoffset: 0, ease:Linear.easeNone})) 
 		new TimelineMax()
-		.add(TweenMax.to($title6, 2.5, {strokeDashoffset: 0, ease:Linear.easeNone})) 
+		.add(TweenMax.to($title6, 1.5, {strokeDashoffset: 0, ease:Linear.easeNone})) 
 		new TimelineMax()
 		.add(TweenMax.to($title7, .5, {strokeDashoffset: 0, ease:Linear.easeNone})) 
 		new TimelineMax()
@@ -114,7 +125,7 @@ function pathPrepare ($el) {
 		new TimelineMax()
 		.add(TweenMax.to($title10, 1.5, {strokeDashoffset: 0, ease:Linear.easeNone})) 
 		new TimelineMax()
-		.add(TweenMax.to($title11, 1.8, {strokeDashoffset: 0, ease:Linear.easeNone})) 
+		.add(TweenMax.to($title11, 2, {strokeDashoffset: 0, ease:Linear.easeNone})) 
 		new TimelineMax()
 		.add(TweenMax.to($title12, 0.9, {strokeDashoffset: 0, ease:Linear.easeNone}))
 		new TimelineMax() 
@@ -131,10 +142,28 @@ function pathPrepare ($el) {
 		.add(TweenMax.to($title18, 1.3, {strokeDashoffset: 0, ease:Linear.easeNone})) 
 		new TimelineMax()
 		.add(TweenMax.to($title19, 0.9, {strokeDashoffset: 0, ease:Linear.easeNone})) 
+
+		// VERSION 1
+		// new TimelineMax()
+		// .add(TweenMax.to($title20, 2.0, {strokeDashoffset: 0, ease:Linear.easeNone}))
+		// .add(TweenMax.to(".nothing", .3, {scaleY:0, delay:0.3, ease: Power3.easeOut})) 
+		// .add(TweenMax.to(".st1", .5, {scaleY:1, ease:Power3.easeOut})) 
+		// new TimelineMax()
+		// .add(TweenMax.to ("#homeOverlay", .5, {opacity: 0, delay:2.6}))
+		// new TimelineMax()
+		// .add(TweenMax.to("#logoLockup", .5, {scaleY:1, ease:Power3.easeOut, delay: 2.6}))
+
+		// VERSION 2
+
 		new TimelineMax()
 		.add(TweenMax.to($title20, 2.0, {strokeDashoffset: 0, ease:Linear.easeNone}))
-		.add(TweenMax.to(".nothing", .3, {scaleY:0})) 
-		.add(TweenMax.to(".st1", .5, {scaleY:1})) 
+		.add(TweenMax.to(".nothing", .3, {opacity:0, delay:0.5, ease: Power3.easeOut})) 
+		new TimelineMax()
+		.add(TweenMax.to(".st1", 3, {opacity:1, delay: 2.5, ease:Power3.easeOut})) 
+		new TimelineMax()
+		.add(TweenMax.to ("#homeOverlay", 3, {opacity: 0, delay:2.5}))
+		new TimelineMax()
+		.add(TweenMax.to("#logoLockup", 3, {opacity:1, ease:Power3.easeOut, delay: 2.5}))
 
 
 
