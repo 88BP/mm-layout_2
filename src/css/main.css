@@ -600,10 +600,12 @@
 body {
   height: 100%;
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  display: none;
+  background-color: #2d9598; }
 
 video#homeVid {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   min-width: 105%;
@@ -622,7 +624,7 @@ video#homeVid {
   height: 100%;
   background: rgba(249, 161, 27, 0.3);
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0%;
   z-index: -50; }
@@ -659,10 +661,18 @@ h3 {
   color: #414042; }
 
 /*MENU*/
+#datacontainer {
+  position: relative;
+  margin-top: 800px; }
+
 #navColumn {
   background-color: #f9a11b;
   width: 200px;
-  margin-top: 1000px;
+  height: 100%;
+  padding-bottom: 5000px;
+  margin-top: -130px;
+  padding-top: 100px;
+  position: absolute;
   /*display: block;*/
   /*	position: fixed;*/
   /*padding-bottom: 5000px;*/
@@ -688,7 +698,8 @@ h3 {
   .navList li {
     list-style-type: none; }
   .navList a {
-    color: white; }
+    color: white;
+    text-decoration: none; }
   .navList a:hover {
     text-decoration: none;
     color: #414042; }
@@ -727,6 +738,12 @@ h3 {
 #vBox1 {
   width: 70%;
   right: 0; }
+
+#verbatim {
+  margin-top: 100px; }
+
+.scrollmagic-pin-spacer {
+  margin-bottom: 200px !important; }
 
 /* PARTIAL BOOTSTRAP SUPPORT ~34K */
 /*@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
